@@ -14,19 +14,19 @@ struct MainTabView: View {
 
     var body: some View {
         TabView {
-            placeholderView("Updates")
+            UpdateTabScreen()
                 .tabItem {
                     Image(systemName: Tab.updates.icon)
                     Text(Tab.updates.title)
                 }
 
-            placeholderView("Calls")
+            CallsTabScreen()
                 .tabItem {
                     Image(systemName: Tab.calls.icon)
                     Text(Tab.calls.title)
                 }
 
-            placeholderView("Communities")
+            CommunityTabScreen()
                 .tabItem {
                     Image(systemName: Tab.communities.icon)
                     Text(Tab.communities.title)
